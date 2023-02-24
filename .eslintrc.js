@@ -5,25 +5,20 @@ const fullLint = process.env.NPM_CONFIG_FULL_LINT;
 module.exports = {
   root: true,
   plugins: ['import'],
-  extends: ['eslint:recommended', 'plugin:import/warnings'],
+  extends: ['./.eslint/.eslintrc.base.js', './.eslint/.eslintrc.import.js'],
   overrides: [
     {
       files: ['**/*'],
       excludedFiles: [`${SRC_DIRS}/*`],
       parser: 'espree',
-      plugins: ['node'],
-      extends: ['plugin:node/recommended-script', 'plugin:node/recommended'],
-      env: {
-        node: true,
-        commonjs: true
-      }
+      extends: ['./.eslint/.eslintrc.node-cjs.js']
     },
     {
       files: [`${SRC_DIRS}/*.{ts,tsx}`, '**/tsconfig.d.ts'],
       extends: [
         fullLint
-          ? './.eslintrc.typescript-full.js'
-          : './.eslintrc.typescript.js'
+          ? './.eslint/.eslintrc.typescript-full.js'
+          : './.eslint/.eslintrc.typescript.js'
       ],
       parser: '@typescript-eslint/parser',
       parserOptions: {
@@ -31,12 +26,12 @@ module.exports = {
         ecmaVersion: 'latest',
         ...(fullLint && {
           tsconfigRootDir: __dirname,
-          project: [
-            './packages/*/tsconfig.json',
-            './packages/special-package/tsconfig.json',
-            './external-folder/tsconfig.json'
-          ]
-          // project: './packages/*/tsconfig.json'
+          // project: [
+          //   './packages/*/tsconfig.json',
+          //   './packages/special-package/tsconfig.json',
+          //   './external-folder/tsconfig.json'
+          // ]
+          project: './packages/*/tsconfig.json'
         })
       },
       settings: {
@@ -44,12 +39,12 @@ module.exports = {
           typescript: {
             alwaysTryTypes: true,
             ...(fullLint && {
-              project: [
-                './packages/*/tsconfig.json',
-                './packages/special-package/tsconfig.json',
-                './external-folder/tsconfig.json'
-              ]
-              // project: './packages/*/tsconfig.json'
+              // project: [
+              //   './packages/*/tsconfig.json',
+              //   './packages/special-package/tsconfig.json',
+              //   './external-folder/tsconfig.json'
+              // ]
+              project: './packages/*/tsconfig.json'
             })
           }
         }
@@ -57,8 +52,9 @@ module.exports = {
     },
     {
       files: [`${SRC_DIRS}/*.{js,jsx}`],
+      excludedFiles: ['./.storybook/main.js'],
+      extends: ['./.eslint/.eslintrc.babel.js'],
       parser: '@babel/eslint-parser',
-      plugins: ['@babel'],
       parserOptions: {
         sourceType: 'module',
         ecmaVersion: 'latest',
@@ -66,20 +62,12 @@ module.exports = {
           root: __dirname,
           rootMode: 'upward-optional'
         }
-      },
-      rules: {
-        'new-cap': 'off',
-        'no-invalid-this': 'off',
-        'no-unused-expressions': 'off',
-        'object-curly-spacing': 'off',
-        semi: 'off',
-
-        '@babel/new-cap': 'error',
-        '@babel/no-invalid-this': 'error',
-        '@babel/no-unused-expressions': 'error',
-        '@babel/object-curly-spacing': 'error',
-        '@babel/semi': 'error'
-      },
-    }
+      }
+    },
+    // {
+    //   // PRETTIER (THIS SHOULD BE ALWAYS LAST)
+    //   files: ['**/*'],
+    //   extends: ['prettier']
+    // }
   ]
 };
