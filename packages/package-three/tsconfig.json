@@ -1,0 +1,16 @@
+{
+    "extends": "../../tsconfig.base.json",
+    "compilerOptions": {
+        "lib": ["ESNext", "DOM"],
+        "jsx": "preserve",
+        "declarationDir": "./types"
+    },
+    "files": ["./src/index.ts"],
+    "include": [
+        "./tsconfig.d.ts",
+        "./src/jest.setup.ts",
+        "**/*.test.tsx",
+        "**/*.test.ts",
+        "**/*.stories.tsx"
+    ]
+}
