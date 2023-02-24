@@ -1,4 +1,4 @@
-const SRC_DIRS = '**/{src}/**';
+const SRC_DIRS = '**/{src,.storybook,cypress}/**';
 
 const fullLint = process.env.NPM_CONFIG_FULL_LINT;
 
@@ -31,12 +31,12 @@ module.exports = {
         ecmaVersion: 'latest',
         ...(fullLint && {
           tsconfigRootDir: __dirname,
-          // project: [
-          //   './packages/package-*/tsconfig.json',
-          //   './packages/special-package/tsconfig.json',
-          //   './external-folder/tsconfig.json'
-          // ]
-          project: './packages/*/tsconfig.json'
+          project: [
+            './packages/*/tsconfig.json',
+            './packages/special-package/tsconfig.json',
+            './external-folder/tsconfig.json'
+          ]
+          // project: './packages/*/tsconfig.json'
         })
       },
       settings: {
@@ -44,12 +44,12 @@ module.exports = {
           typescript: {
             alwaysTryTypes: true,
             ...(fullLint && {
-              // project: [
-              //   './packages/package-*/tsconfig.json',
-              //   './packages/special-package/tsconfig.json',
-              //   './external-folder/tsconfig.json'
-              // ]
-              project: './packages/*/tsconfig.json'
+              project: [
+                './packages/*/tsconfig.json',
+                './packages/special-package/tsconfig.json',
+                './external-folder/tsconfig.json'
+              ]
+              // project: './packages/*/tsconfig.json'
             })
           }
         }
@@ -58,6 +58,7 @@ module.exports = {
     {
       files: [`${SRC_DIRS}/*.{js,jsx}`],
       parser: '@babel/eslint-parser',
+      plugins: ['@babel'],
       parserOptions: {
         sourceType: 'module',
         ecmaVersion: 'latest',
@@ -66,7 +67,6 @@ module.exports = {
           rootMode: 'upward-optional'
         }
       },
-      plugins: ['@babel'],
       rules: {
         'new-cap': 'off',
         'no-invalid-this': 'off',
@@ -80,10 +80,6 @@ module.exports = {
         '@babel/object-curly-spacing': 'error',
         '@babel/semi': 'error'
       },
-    },
-    {
-      files: ['**/*'],
-      extends: ['prettier']
     }
   ]
 };

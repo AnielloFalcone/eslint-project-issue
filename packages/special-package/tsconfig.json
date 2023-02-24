@@ -5,14 +5,9 @@
         "jsx": "preserve",
         "declarationDir": "./types"
     },
-    "files": [
-      "./src/index.ts"
-    ],
     "include": [
-      "./tsconfig.d.ts",
-        "./src/jest.setup.ts",
-        "**/*.test.tsx",
-        "**/*.test.ts",
-        "**/*.stories.tsx"
+        "./tsconfig.d.ts",
+        "**/*.tsx",
+        "**/*.ts",
     ]
 }

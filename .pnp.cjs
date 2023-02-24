@@ -96,14 +96,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/parser", "virtual:bdf43193cefe019236fe4d9b3c925fca69e3fec98aea91759c058a4a65ffcec07474057d84af4e5ded378d949ac85f24fa0a665ed93c39d6770f611d2b2a428a#npm:5.53.0"],\
             ["babel-plugin-jsx-remove-data-test-id", "virtual:bdf43193cefe019236fe4d9b3c925fca69e3fec98aea91759c058a4a65ffcec07474057d84af4e5ded378d949ac85f24fa0a665ed93c39d6770f611d2b2a428a#npm:3.0.0"],\
             ["eslint", "npm:8.34.0"],\
-            ["eslint-config-prettier", "virtual:bdf43193cefe019236fe4d9b3c925fca69e3fec98aea91759c058a4a65ffcec07474057d84af4e5ded378d949ac85f24fa0a665ed93c39d6770f611d2b2a428a#npm:8.6.0"],\
             ["eslint-import-resolver-typescript", "virtual:bdf43193cefe019236fe4d9b3c925fca69e3fec98aea91759c058a4a65ffcec07474057d84af4e5ded378d949ac85f24fa0a665ed93c39d6770f611d2b2a428a#npm:3.5.3"],\
             ["eslint-plugin-import", "virtual:bdf43193cefe019236fe4d9b3c925fca69e3fec98aea91759c058a4a65ffcec07474057d84af4e5ded378d949ac85f24fa0a665ed93c39d6770f611d2b2a428a#npm:2.27.5"],\
             ["eslint-plugin-jsx-a11y", "virtual:bdf43193cefe019236fe4d9b3c925fca69e3fec98aea91759c058a4a65ffcec07474057d84af4e5ded378d949ac85f24fa0a665ed93c39d6770f611d2b2a428a#npm:6.7.1"],\
             ["eslint-plugin-node", "virtual:bdf43193cefe019236fe4d9b3c925fca69e3fec98aea91759c058a4a65ffcec07474057d84af4e5ded378d949ac85f24fa0a665ed93c39d6770f611d2b2a428a#npm:11.1.0"],\
             ["eslint-plugin-react", "virtual:bdf43193cefe019236fe4d9b3c925fca69e3fec98aea91759c058a4a65ffcec07474057d84af4e5ded378d949ac85f24fa0a665ed93c39d6770f611d2b2a428a#npm:7.32.2"],\
             ["eslint-plugin-react-hooks", "virtual:bdf43193cefe019236fe4d9b3c925fca69e3fec98aea91759c058a4a65ffcec07474057d84af4e5ded378d949ac85f24fa0a665ed93c39d6770f611d2b2a428a#npm:4.6.0"],\
-            ["prettier", "npm:2.8.4"],\
             ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=a1c5e5"]\
           ],\
           "linkType": "SOFT"\
@@ -3817,14 +3815,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/parser", "virtual:bdf43193cefe019236fe4d9b3c925fca69e3fec98aea91759c058a4a65ffcec07474057d84af4e5ded378d949ac85f24fa0a665ed93c39d6770f611d2b2a428a#npm:5.53.0"],\
             ["babel-plugin-jsx-remove-data-test-id", "virtual:bdf43193cefe019236fe4d9b3c925fca69e3fec98aea91759c058a4a65ffcec07474057d84af4e5ded378d949ac85f24fa0a665ed93c39d6770f611d2b2a428a#npm:3.0.0"],\
             ["eslint", "npm:8.34.0"],\
-            ["eslint-config-prettier", "virtual:bdf43193cefe019236fe4d9b3c925fca69e3fec98aea91759c058a4a65ffcec07474057d84af4e5ded378d949ac85f24fa0a665ed93c39d6770f611d2b2a428a#npm:8.6.0"],\
             ["eslint-import-resolver-typescript", "virtual:bdf43193cefe019236fe4d9b3c925fca69e3fec98aea91759c058a4a65ffcec07474057d84af4e5ded378d949ac85f24fa0a665ed93c39d6770f611d2b2a428a#npm:3.5.3"],\
             ["eslint-plugin-import", "virtual:bdf43193cefe019236fe4d9b3c925fca69e3fec98aea91759c058a4a65ffcec07474057d84af4e5ded378d949ac85f24fa0a665ed93c39d6770f611d2b2a428a#npm:2.27.5"],\
             ["eslint-plugin-jsx-a11y", "virtual:bdf43193cefe019236fe4d9b3c925fca69e3fec98aea91759c058a4a65ffcec07474057d84af4e5ded378d949ac85f24fa0a665ed93c39d6770f611d2b2a428a#npm:6.7.1"],\
             ["eslint-plugin-node", "virtual:bdf43193cefe019236fe4d9b3c925fca69e3fec98aea91759c058a4a65ffcec07474057d84af4e5ded378d949ac85f24fa0a665ed93c39d6770f611d2b2a428a#npm:11.1.0"],\
             ["eslint-plugin-react", "virtual:bdf43193cefe019236fe4d9b3c925fca69e3fec98aea91759c058a4a65ffcec07474057d84af4e5ded378d949ac85f24fa0a665ed93c39d6770f611d2b2a428a#npm:7.32.2"],\
             ["eslint-plugin-react-hooks", "virtual:bdf43193cefe019236fe4d9b3c925fca69e3fec98aea91759c058a4a65ffcec07474057d84af4e5ded378d949ac85f24fa0a665ed93c39d6770f611d2b2a428a#npm:4.6.0"],\
-            ["prettier", "npm:2.8.4"],\
             ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=a1c5e5"]\
           ],\
           "linkType": "SOFT"\
@@ -3993,28 +3989,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["strip-ansi", "npm:6.0.1"],\
             ["strip-json-comments", "npm:3.1.1"],\
             ["text-table", "npm:0.2.0"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["eslint-config-prettier", [\
-        ["npm:8.6.0", {\
-          "packageLocation": "./.yarn/cache/eslint-config-prettier-npm-8.6.0-00192c9409-ff0d0dfc83.zip/node_modules/eslint-config-prettier/",\
-          "packageDependencies": [\
-            ["eslint-config-prettier", "npm:8.6.0"]\
-          ],\
-          "linkType": "SOFT"\
-        }],\
-        ["virtual:bdf43193cefe019236fe4d9b3c925fca69e3fec98aea91759c058a4a65ffcec07474057d84af4e5ded378d949ac85f24fa0a665ed93c39d6770f611d2b2a428a#npm:8.6.0", {\
-          "packageLocation": "./.yarn/__virtual__/eslint-config-prettier-virtual-9fa3cbdb75/0/cache/eslint-config-prettier-npm-8.6.0-00192c9409-ff0d0dfc83.zip/node_modules/eslint-config-prettier/",\
-          "packageDependencies": [\
-            ["eslint-config-prettier", "virtual:bdf43193cefe019236fe4d9b3c925fca69e3fec98aea91759c058a4a65ffcec07474057d84af4e5ded378d949ac85f24fa0a665ed93c39d6770f611d2b2a428a#npm:8.6.0"],\
-            ["@types/eslint", null],\
-            ["eslint", "npm:8.34.0"]\
-          ],\
-          "packagePeers": [\
-            "@types/eslint",\
-            "eslint"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -5653,15 +5627,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/prelude-ls-npm-1.2.1-3e4d272a55-cd192ec0d0.zip/node_modules/prelude-ls/",\
           "packageDependencies": [\
             ["prelude-ls", "npm:1.2.1"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["prettier", [\
-        ["npm:2.8.4", {\
-          "packageLocation": "./.yarn/cache/prettier-npm-2.8.4-ba64a351d1-c173064bf3.zip/node_modules/prettier/",\
-          "packageDependencies": [\
-            ["prettier", "npm:2.8.4"]\
           ],\
           "linkType": "HARD"\
         }]\
